@@ -33,6 +33,7 @@ const Restaurant = () => {
             const savedOrder = [];
             for (const mealId in savedDb) {
                 const meal = meals.find(ml => ml.idMeal === mealId)
+                //setting the quantity property 
                 const quantity = savedDb[mealId];
                 meal.quantity = quantity;
                 savedOrder.push(meal);
