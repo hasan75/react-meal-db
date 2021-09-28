@@ -22,6 +22,12 @@ const saveToDb = db => {
 
 const getDb = () => {
     let savedDb = localStorage.getItem('shopping-cart');
+    // if (savedDb){
+    //     savedDb = JSON.parse(savedDb);
+    // }
+    // else{
+    //     savedDb = {}
+    // }
     return savedDb ? JSON.parse(savedDb) : {};
 }
 
