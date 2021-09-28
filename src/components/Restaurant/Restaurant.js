@@ -13,7 +13,7 @@ const Restaurant = () => {
             .then(res => res.json())
             .then(data => setMeals(data.meals));
     }, []);
-    /* 
+    /* Jhankar Vai's Comment:::: 
         The above api link or the below method will now work for search. 
         if you want to implement search in this code. 
         1. add a input field 
